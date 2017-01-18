@@ -1,2 +1,2 @@
-# CLM_BinaryTree
-Binary Search Trees and Splay Trees implemented in C
+# CLM_BinaryTrees
+Binary Search Trees, Splay Trees and Red Black Trees implemented in C
