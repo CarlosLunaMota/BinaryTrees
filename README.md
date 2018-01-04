@@ -273,16 +273,16 @@ and because they expect the tree to be already balanced.
 
 ## References:
 
-1)<a name="footnote1">–</a> https://en.wikipedia.org/wiki/Binary_search_tree
-1)<a name="footnote2">–</a> https://en.wikipedia.org/wiki/Associative_array
-1)<a name="footnote3">–</a> https://en.wikipedia.org/wiki/Set_(abstract_data_type)
-1)<a name="footnote4">–</a> https://en.wikipedia.org/wiki/Priority_queue
-1)<a name="footnote5">–</a> https://en.wikipedia.org/wiki/AVL_tree
-1)<a name="footnote6">–</a> https://en.wikipedia.org/wiki/Treap
-1)<a name="footnote7">–</a> https://en.wikipedia.org/wiki/B-tree
-1)<a name="footnote8">–</a> https://en.wikipedia.org/wiki/2–3_tree
-1)<a name="footnote9">–</a> https://en.wikipedia.org/wiki/2–3–4_tree
-1)<a name="footnote10">–</a> https://en.wikipedia.org/wiki/Red–black_tree
-1)<a name="footnote11">–</a> https://en.wikipedia.org/wiki/Weight-balanced_tree 
-1)<a name="footnote12">–</a> https://en.wikipedia.org/wiki/Scapegoat_tree
-1)<a name="footnote13">–</a> https://en.wikipedia.org/wiki/Splay_tree
+1) <a name="footnote1">–</a> https://en.wikipedia.org/wiki/Binary_search_tree
+1) <a name="footnote2">–</a> https://en.wikipedia.org/wiki/Associative_array
+1) <a name="footnote3">–</a> https://en.wikipedia.org/wiki/Set_(abstract_data_type)
+1) <a name="footnote4">–</a> https://en.wikipedia.org/wiki/Priority_queue
+1) <a name="footnote5">–</a> https://en.wikipedia.org/wiki/AVL_tree
+1) <a name="footnote6">–</a> https://en.wikipedia.org/wiki/Treap
+1) <a name="footnote7">–</a> https://en.wikipedia.org/wiki/B-tree
+1) <a name="footnote8">–</a> https://en.wikipedia.org/wiki/2–3_tree
+1) <a name="footnote9">–</a> https://en.wikipedia.org/wiki/2–3–4_tree
+1) <a name="footnote10">–</a> https://en.wikipedia.org/wiki/Red–black_tree
+1) <a name="footnote11">–</a> https://en.wikipedia.org/wiki/Weight-balanced_tree 
+1) <a name="footnote12">–</a> https://en.wikipedia.org/wiki/Scapegoat_tree
+1) <a name="footnote13">–</a> https://en.wikipedia.org/wiki/Splay_tree
