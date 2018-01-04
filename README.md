@@ -1,8 +1,6 @@
 # CLM_BinaryTrees
 
-## TL;DR:
-
-This library implements three different binary search trees in C:
+**TL;DR:** This library implements three different binary search trees in C:
 
 * The _Classic_ **Binary Search Tree** (```bs_tree``` functions)
 * The **Red Black Tree** (```rb_tree``` functions)
@@ -30,11 +28,11 @@ and maintain.
 
 ## Introduction
 
-A Binary Search Tree [^1] is a versatile linked data structure designed to
+A Binary Search Tree<sup>[1](#footnote1)</sup> is a versatile linked data structure designed to
 store and retrieve data quickly.
 
-They can be used to implement, among others, the Dictionary [^2], the Set [^3]
-and the Priority Queue [^4] abstract data types.
+They can be used to implement, among others, the Dictionary<sup>[2](#footnote2)</sup>, the Set<sup>[3](#footnote3)</sup>
+and the Priority Queue<sup>[4](#footnote4)</sup> abstract data types.
 
 The basic primitives of a Binary Search Tree are:
 
@@ -133,22 +131,22 @@ the tree remains fairly balanced.
 
 The most common self-balancing Binary Search Tree variants are:
 
-* **AVL trees**[^5] are the oldest balanced search trees and the most rigidly
+* **AVL trees**<sup>[5](#footnote5)</sup> are the oldest balanced search trees and the most rigidly
 balanced ones. However, there is not any top-down single-pass deletion algorithm
 for them which makes them less popular nowadays.
-* **Treaps**[^6] are efficient and relatively easy to implement but require the
+* **Treaps**<sup>[6](#footnote6)</sup> are efficient and relatively easy to implement but require the
 generation and storage of pseudo-random numbers in each node.
-* **B-trees**[^7] is a huge family of variants that include the 2-3 trees[^8]
-and the 2-3-4[^9] trees as a particular cases. Their main drawback is that they
+* **B-trees**<sup>[7](#footnote7)</sup> is a huge family of variants that include the 2-3 trees<sup>[8](#footnote8)</sup>
+and the 2-3-4<sup>[9](#footnote9)</sup> trees as a particular cases. Their main drawback is that they
 either use different sized nodes or waste memory using always the biggest node
 type.
-* **Red Black trees**[^10] simulate the behavior of 2-3-4 trees by
+* **Red Black trees**<sup>[10](#footnote10)</sup> simulate the behavior of 2-3-4 trees by
 using binary nodes with and additional field called _the color_. They are less
 rigidly balanced than AVL trees (which makes possible to use top-down
 single-pass insertion and deletion algorithms) but tend to perform like
 them, making Red Black trees the most popular self-balancing variant
 nowadays.
-* Finally, **Weight Balanced trees**[^11] are less known but more versatile than
+* Finally, **Weight Balanced trees**<sup>[11](#footnote11)</sup> are less known but more versatile than
 Red Black trees, however, they require to store _the size_ of each subtree in
 every node, which imposes an artificial upper limit in the size of the tree.
 With the popularization of the 64 bit computers this is no longer a problem and
@@ -163,14 +161,14 @@ There are other solutions to avoid the problems associated to degeneracy without
 storing additional information in the nodes of the tree. Two of the most
 interesting ones are:
 
-* **Scapegoat trees**[^12] are Binary Search Trees that perform an expensive
+* **Scapegoat trees**<sup>[12](#footnote12)</sup> are Binary Search Trees that perform an expensive
 rebalancing operation when they detect degeneracy in a subtree.
 The amortized cost of such operation is constant and it will only be
 applied after a insertion or a deletion. Their only drawback is that
 rebalance operation needs to know the size of the rebalanced subtree and
 I would rather preffer algorithms that do not explicitly keep track of
 the size or the height of the tree.
-* **Splay trees**[^13] are Binary Search Trees that perform a rebalancing 
+* **Splay trees**<sup>[13](#footnote13)</sup> are Binary Search Trees that perform a rebalancing 
 operation called _Splaying_ each time an element is accesed. That means
 that **all operations** (insert, remove, search, find_min, etc...) will be
 more expensive than they are in the other Binary Search Tree variants.
@@ -275,16 +273,16 @@ and because they expect the tree to be already balanced.
 
 ## References:
 
-[^1]  https:en.wikipedia.org/wiki/Binary_search_tree
-[^2]  https:en.wikipedia.org/wiki/Associative_array
-[^3]  https:en.wikipedia.org/wiki/Set_(abstract_data_type)
-[^4]  https:en.wikipedia.org/wiki/Priority_queue
-[^5]  https:en.wikipedia.org/wiki/AVL_tree
-[^6]  https:en.wikipedia.org/wiki/Treap
-[^7]  https:en.wikipedia.org/wiki/B-tree
-[^8]  https:en.wikipedia.org/wiki/2–3_tree
-[^9]  https:en.wikipedia.org/wiki/2–3–4_tree
-[^10] https:en.wikipedia.org/wiki/Red–black_tree
-[^11] https://en.wikipedia.org/wiki/Weight-balanced_tree 
-[^12] https:en.wikipedia.org/wiki/Scapegoat_tree
-[^13] https:en.wikipedia.org/wiki/Splay_tree
+1)<a name="footnote1">–</a> https://en.wikipedia.org/wiki/Binary_search_tree
+1)<a name="footnote2">–</a> https://en.wikipedia.org/wiki/Associative_array
+1)<a name="footnote3">–</a> https://en.wikipedia.org/wiki/Set_(abstract_data_type)
+1)<a name="footnote4">–</a> https://en.wikipedia.org/wiki/Priority_queue
+1)<a name="footnote5">–</a> https://en.wikipedia.org/wiki/AVL_tree
+1)<a name="footnote6">–</a> https://en.wikipedia.org/wiki/Treap
+1)<a name="footnote7">–</a> https://en.wikipedia.org/wiki/B-tree
+1)<a name="footnote8">–</a> https://en.wikipedia.org/wiki/2–3_tree
+1)<a name="footnote9">–</a> https://en.wikipedia.org/wiki/2–3–4_tree
+1)<a name="footnote10">–</a> https://en.wikipedia.org/wiki/Red–black_tree
+1)<a name="footnote11">–</a> https://en.wikipedia.org/wiki/Weight-balanced_tree 
+1)<a name="footnote12">–</a> https://en.wikipedia.org/wiki/Scapegoat_tree
+1)<a name="footnote13">–</a> https://en.wikipedia.org/wiki/Splay_tree
